@@ -1,0 +1,9 @@
+node_modules
+.ds_store
+.terraform
+*.zip
+dist
+coverage
+.nodejs
+lib
+.idea

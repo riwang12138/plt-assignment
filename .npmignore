@@ -1,0 +1,6 @@
+__tests__
+.eslintrc.js
+.prettierrc.yml
+src/
+test-setup/
+coverage/

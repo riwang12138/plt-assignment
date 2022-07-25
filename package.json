@@ -1,0 +1,36 @@
+{
+  "name": "plt-assignment",
+  "version": "1.0.0",
+  "description": "to create a function which is able to return the current stock levels for a given SKU",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config=test-setup/jest.config.test.js",
+    "test:coverage": "jest --coverage --config=test-setup/jest.config.test.js",
+    "build": "tsc",
+    "validate": "npm run eslint && npm run audit && npm run test",
+    "audit": "npm audit --production",
+    "eslint": "eslint .",
+    "format": "npm run format:eslint && npm run format:prettier",
+    "format:eslint": "eslint --fix --ignore-path ./.gitignore . ",
+    "format:prettier": "prettier --write --ignore-path ./.gitignore '**/*.{js,jsx}' "
+  },
+  "author": "Riwang Xue",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/node": "^18.6.1",
+    "@types/uuid": "^8.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+  }
+}
